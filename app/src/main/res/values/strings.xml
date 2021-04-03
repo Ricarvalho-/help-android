@@ -5,7 +5,10 @@
     <string name="save_post_button_description">Save post</string>
     <string name="post_image_description">Post image</string>
     <string name="pick_post_image_description">Pick post image</string>
+    <string name="post_owner_image_description">Owner of post</string>
+    <string name="post_kind_image_description">Kind of post</string>
     <string name="post_kind_image_button_description">Kind of post</string>
+    <string name="post_options_image_button_description">Post options</string>
 
     <string name="map_menu_item">Map</string>
     <string name="search_menu_item">Search</string>

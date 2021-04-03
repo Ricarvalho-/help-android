@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:constraint_referenced_ids="kindImageView,titleLocationFlow,optionsButton,postImage,descriptionTextView,ownerImageView,ownerTextView,dateTextView"
+            app:flow_horizontalGap="16dp"
+            app:flow_verticalGap="16dp"
+            app:flow_wrapMode="chain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/kindImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/post_kind_image_description"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Circle"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/titleLocationFlow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:flow_maxElementsWrap="1"
+            app:flow_verticalGap="4dp"
+            app:flow_wrapMode="chain"
+            app:constraint_referenced_ids="titleTextView,locationTextView" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            tools:text="@tools:sample/lorem/random" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Overline"
+            android:gravity="center_vertical"
+            android:drawablePadding="4dp"
+            app:drawableStartCompat="@drawable/ic_round_place_24"
+            tools:text="@tools:sample/cities" />
+
+        <ImageButton
+            android:id="@+id/optionsButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_round_more_vert_24"
+            android:contentDescription="@string/post_options_image_button_description"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/postImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="16:9"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="10"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="@tools:sample/lorem/random" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ownerImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/post_owner_image_description"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Circle"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/ownerTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            tools:text="@tools:sample/full_names" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Overline"
+            android:gravity="center_vertical"
+            android:drawablePadding="4dp"
+            app:drawableStartCompat="@drawable/ic_round_event_24"
+            tools:text="@tools:sample/date/ddmmyy" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
