@@ -17,19 +17,16 @@
             app:layout_scrollFlags="scroll|enterAlways|snap">
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/badTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/bad_tab" />
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/changeTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/change_tab" />
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/goodTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/good_tab" />
