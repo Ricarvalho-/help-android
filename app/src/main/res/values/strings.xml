@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HELP</string>
+    <string name="new_post_button_description">Create new post</string>
+    <string name="map_menu_item">Map</string>
+    <string name="search_menu_item">Search</string>
+    <string name="bad_tab">Bad</string>
+    <string name="change_tab">Change</string>
+    <string name="good_tab">Good</string>
 </resources>
