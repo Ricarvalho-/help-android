@@ -8,4 +8,9 @@
         android:id="@+id/homeFragment"
         android:name="com.ricarvalho.help.home.HomeFragment"
         android:label="HomeFragment" />
+
+    <fragment
+        android:id="@+id/postDetailsFragment"
+        android:name="com.ricarvalho.help.post.PostDetailsFragment"
+        android:label="PostDetailsFragment" />
 </navigation>
