@@ -6,11 +6,13 @@
         android:id="@+id/map"
         android:icon="@drawable/ic_round_place_24"
         android:title="@string/map_menu_item"
+        android:contentDescription="@string/map_menu_item_description"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/search"
         android:icon="@drawable/ic_round_search_24"
         android:title="@string/search_menu_item"
+        android:contentDescription="@string/search_menu_item_description"
         app:showAsAction="always" />
 </menu>

@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:transitionGroup="true">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -51,7 +53,7 @@
         app:fabCradleMargin="8dp"
         app:hideOnScroll="true"
         app:navigationIcon="@drawable/ic_round_menu_24"
-        tools:menu="@menu/home_bottom_app_bar" />
+        app:menu="@menu/home_bottom_app_bar" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/newPostFab"
@@ -59,5 +61,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_round_add_24"
         android:contentDescription="@string/new_post_button_description"
+        android:transitionName="@string/new_post_transition"
         app:layout_anchor="@id/bottomAppBar" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

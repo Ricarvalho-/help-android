@@ -9,6 +9,8 @@
     <string name="post_kind_image_description">Kind of post</string>
     <string name="post_kind_image_button_description">Kind of post</string>
     <string name="post_options_image_button_description">Post options</string>
+    <string name="map_menu_item_description">Map</string>
+    <string name="search_menu_item_description">Search</string>
 
     <string name="map_menu_item">Map</string>
     <string name="search_menu_item">Search</string>
