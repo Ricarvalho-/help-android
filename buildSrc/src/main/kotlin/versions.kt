@@ -1,0 +1,1 @@
+const val navVersion = "2.3.5"
