@@ -7,10 +7,14 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.ricarvalho.help.home.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_postCreationFragment"
+            app:destination="@id/postCreationFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/postDetailsFragment"
-        android:name="com.ricarvalho.help.post.PostDetailsFragment"
-        android:label="PostDetailsFragment" />
+        android:id="@+id/postCreationFragment"
+        android:name="com.ricarvalho.help.post.PostCreationFragment"
+        android:label="PostCreationFragment" />
 </navigation>

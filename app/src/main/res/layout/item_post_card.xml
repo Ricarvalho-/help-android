@@ -14,7 +14,7 @@
         <androidx.constraintlayout.helper.widget.Flow
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:constraint_referenced_ids="kindImageView,titleLocationFlow,optionsButton,postImage,descriptionTextView,ownerImageView,ownerTextView,dateTextView"
+            app:constraint_referenced_ids="categoryImageView,titleLocationFlow,optionsButton,postImage,descriptionTextView,ownerImageView,ownerTextView,dateTextView"
             app:flow_horizontalGap="16dp"
             app:flow_verticalGap="16dp"
             app:flow_wrapMode="chain"
@@ -23,13 +23,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/kindImageView"
+        <ImageView
+            android:id="@+id/categoryImageView"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:contentDescription="@string/post_kind_image_description"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Circle"
-            tools:src="@tools:sample/avatars" />
+            android:contentDescription="@string/post_category_image_description"
+            tools:src="@drawable/ic_round_eco_24" />
 
         <androidx.constraintlayout.helper.widget.Flow
             android:id="@+id/titleLocationFlow"
@@ -65,9 +64,9 @@
             android:id="@+id/optionsButton"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_round_more_vert_24"
-            android:contentDescription="@string/post_options_image_button_description"
-            style="@style/Widget.AppCompat.Button.Borderless" />
+            android:contentDescription="@string/post_options_image_button_description" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/postImage"
