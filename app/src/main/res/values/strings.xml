@@ -1,23 +1,25 @@
 <resources>
     <string name="app_name">HELP</string>
+    <string name="create_post_screen_title">Create post</string>
 
     <string name="new_post_button_description">Create new post</string>
     <string name="save_post_button_description">Save post</string>
     <string name="post_image_description">Post image</string>
     <string name="pick_post_image_description">Pick post image</string>
     <string name="post_owner_image_description">Owner of post</string>
-    <string name="post_kind_image_description">Kind of post</string>
-    <string name="post_kind_image_button_description">Kind of post</string>
+    <string name="post_category_image_description">Category of post</string>
     <string name="post_options_image_button_description">Post options</string>
+    <string name="map_menu_item_description">Map</string>
+    <string name="filter_menu_item_description">Filter</string>
 
     <string name="map_menu_item">Map</string>
-    <string name="search_menu_item">Search</string>
-
-    <string name="bad_tab">Bad</string>
-    <string name="change_tab">Change</string>
-    <string name="good_tab">Good</string>
+    <string name="filter_menu_item">Filter</string>
 
     <string name="post_title_field_hint">Title</string>
-    <string name="post_description_field_hint">Description</string>
+    <string name="post_category_field_hint">Category</string>
+    <string name="post_kind_field_hint">Kind</string>
     <string name="post_location_field_hint">Location</string>
+    <string name="post_description_field_hint">Description</string>
+
+    <string name="post_severity">Severity: affects %1$s</string>
 </resources>
